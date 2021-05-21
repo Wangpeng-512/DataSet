@@ -26,7 +26,9 @@
 # 2. The Kvasir-SEG Dataset  https://datasets.simula.no/kvasir-seg/Kvasir-SEG.zip
 #   内容：
   .  在The Kvasir Dataset基础上添加了segmentation masks。包含来自Kvasir Dataset v2的1000张息肉图像和对应的分割ground truth（pixel-wise mask和bounding box），分辨率从332x487到1920x1072不等。 The images and its corresponding masks are stored in two separate folders with the same filename. The image files are encoded using JPEG compression, and online browsing is facilitated. The open-access dataset can be easily downloaded for research and educational purposes.
-  
+# 示例图像
+![mix1](https://user-images.githubusercontent.com/83991596/119069533-df1af780-ba18-11eb-969a-bd225c5aeacd.png)
+
     
 
 
