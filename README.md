@@ -3,8 +3,8 @@
 * **内容：**
 * 数据集包括腹部壁，子宫角，肾切除术场景1，肾切除术场景2和肝脏的场景；提取的每个密集3D点云平均包含大约100,000个点。
 * **对应论文：**
- [1] Recovering Dense 3D Point Clouds from Single Endoscopic Image. Subbmitted to Computer Methods and Programs in Biomedicine[J]. 2020.
- [2] Giannarou S, Stoyanov D, Noonan D, et al. Hamlyn centre laparoscopic/endoscopic video datasets[J]. 2012.
+* [1] Recovering Dense 3D Point Clouds from Single Endoscopic Image. Subbmitted to Computer Methods and Programs in Biomedicine[J]. 2020.
+* [2] Giannarou S, Stoyanov D, Noonan D, et al. Hamlyn centre laparoscopic/endoscopic video datasets[J]. 2012.
 
 
 # Endoscopic-Datasets
