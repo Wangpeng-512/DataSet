@@ -3,6 +3,7 @@
 # 1.The Kvasir Dataset
 #   内容： 
    . 分为Kvasir Dataset v1、Kvasir Dataset v2两个版本，两个版本均包含8个类别。其中，解剖标志三类：Z线，幽门，盲肠；病理结果三类：食管炎，息肉，溃疡性结肠炎；内镜检查程序两类："dyed and lifted polyp"，"dyed resection margins"。版本1共包含4000张图像，每类400张。版本2共包含8000张图像，每类800张。分辨率从720x576到1920x1072不等。
+# 对应论文： Pogorelov, K., et al. (2017). Kvasir: A multi-class image dataset for computer aided gastrointestinal disease detection. Proceedings of the 8th ACM on Multimedia Systems Conference.
 #                                        Kvasir Dataset v1
 . Kvasir数据集（v1）的第一版包含8类的4,000张图像，这些图像显示了GI道的解剖标志，病理学发现或内窥镜检查程序，即每类500张图像。解剖学标志是Z线，幽门和盲肠，病理发现是食管炎，息肉和溃疡性结肠炎。此外，我们提供了两组与息肉切除相关的图像，即“染过的息肉和抬高的息肉”和“切除的切除切缘”。
 #   Kvasir数据集v1    https://datasets.simula.no/kvasir/data/kvasir-dataset.zip
@@ -26,15 +27,18 @@
 # 2. The Kvasir-SEG Dataset  https://datasets.simula.no/kvasir-seg/Kvasir-SEG.zip
 #   内容：
   .  在The Kvasir Dataset基础上添加了segmentation masks。包含来自Kvasir Dataset v2的1000张息肉图像和对应的分割ground truth（pixel-wise mask和bounding box），分辨率从332x487到1920x1072不等。 The images and its corresponding masks are stored in two separate folders with the same filename. The image files are encoded using JPEG compression, and online browsing is facilitated. The open-access dataset can be easily downloaded for research and educational purposes.
+# 对应论文 Jha, D., et al. (2020). Kvasir-seg: A segmented polyp dataset. International Conference on Multimedia Modeling, Springer.
 # 示例图像
 ![mix2](https://user-images.githubusercontent.com/83991596/119069649-19849480-ba19-11eb-9c27-626c3752563a.png)
 
 # 3. The Hyper-Kvasir Dataset
+# 内容
 . 号称最大的胃肠数据集，大小有58.6G，包含110079张图像和374个视频。数据集分为四大类：
 第一类是标注图像，包含10662张图像，相当于The Kvasir Dataset的扩充。类别包含解剖标志(anatomical landmarks)、病理发现(phatological findings)、正常发现(normal findings)，其中解剖标志又分为上消化道（Z线，反转视角下的胃，幽门）、下消化道（回肠，盲肠，反转视角下的直肠），病理发现包括上消化道病理发现（反流性食管炎，巴雷特食管，）、下消化道病理发现（溃疡性结肠炎，息肉，痔疮），正常发现包括波士顿肠道准备评分、粪便、内镜检查程序（"dyed and lifted polyp"，"dyed resection margins"）。
 第二类是分割图像，与The Kvasir-SEG Dataset相同。
 第三类是未标注图像，包含99417张图像。
 第四类是标注视频，包含374个视频，每个视频有对应的finding标签，如息肉、出血、肿瘤等。
+# 对应论文 Hyper-Kvasir: A Comprehensive Multi-Class Image and Video Dataset for Gastrointestinal Endoscopy
 # 示例图像
 
 
