@@ -39,7 +39,7 @@
 
 *  在The Kvasir Dataset基础上添加了segmentation masks。包含来自Kvasir Dataset v2的1000张息肉图像和对应的分割ground truth（pixel-wise mask和bounding box），分辨率从332x487到1920x1072不等。 The images and its corresponding masks are stored in two separate folders with the same filename. The image files are encoded using JPEG compression, and online browsing is facilitated. The open-access dataset can be easily downloaded for research and educational purposes.
 * **对应论文:** Jha, D., et al. (2020). Kvasir-seg: A segmented polyp dataset. International Conference on Multimedia Modeling, Springer.
-* **示例图像：**
+* **示例图像:**
 <p align="center">
 <img src='imgs/kvasir-seg-samples0.png' width=500/> 
 <img src='imgs/kvasir-seg-samples1.png' width=500/> 
