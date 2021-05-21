@@ -36,8 +36,6 @@
 第三类是未标注图像，包含99417张图像。
 第四类是标注视频，包含374个视频，每个视频有对应的finding标签，如息肉、出血、肿瘤等。
 # 示例图像
-![hyper-kvasir-samples0](https://user-images.githubusercontent.com/83991596/119070648-007ce300-ba1b-11eb-9aff-7b1c68ead2ab.jpg)![hyper-kvasir-samples1](https://user-images.githubusercontent.com/83991596/119070660-08d51e00-ba1b-11eb-85e1-f923225443c7.jpg)![hyper-kvasir-samples2](https://user-images.githubusercontent.com/83991596/119070678-0f639580-ba1b-11eb-9b40-2e34bba3c78e.jpg)
-
 
 
  # 标注图像（3.9GB）  https://datasets.simula.no/hyper-kvasir/hyper-kvasir-labeled-images.zip
