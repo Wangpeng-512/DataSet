@@ -23,3 +23,7 @@
 . 该kvasir-dataset-v2-folds.zip（尺寸810.9 MB）存档包含20,000多张影像。这是从Kvasir数据集（v2）的扩展生成的官方两类附加图像集，可用于执行多类分类算法的10倍交叉验证。图像存储在单独的文件夹中，该文件夹根据折叠编号和类别图像的名称进行相应命名。所有图像在每个折叠中都统一命名，并且与Kvasir数据集（v2）中的原始图像名称不匹配。图像文件使用JPEG压缩进行编码。编码设置在整个数据集中可能有所不同，并且它们反映了先验未知的内窥镜设备设置。图像文件的扩展名是“ .jpg”。
 # 提取的功能（Kvasir数据集v2折叠-附加集）https://datasets.simula.no/kvasir/data/kvasir-dataset-v2-folds-additional-classes-features.zip
 . 该kvasir-dataset-v2-fold-features.zip（大小24.3 MB）存档包含从Kvasir Dataset v2 Folds-Additional Set中提取的所有图像的视觉特征描述符。提取的视觉特征存储在单独的文件夹和文件中，这些文件夹和文件根据相应图像文件的名称和路径进行相应命名。提取的视觉特征是全局图像特征，即：JCD，Tamura，ColorLayout，EdgeHistogram，AutoColorCorrelogram和PHOG。每个特征向量都包含许多浮点值。向量的大小取决于特征。特征向量的大小为：168（JCD），18（Tamura），33（ColorLayout），80（EdgeHistogram），256（AutoColorCorrelogram）和630（PHOG）。提取的视觉特征存储在文本文件中。每个文件由八行组成，每个功能各占一行。每行由一个特征名称组成，该特征名称与特征向量之间用冒号分隔。每个特征向量都包含由逗号分隔的相应数量的浮点值。提取的视觉特征文件的扩展名是“ .features”。
+# 2. The Kvasir-SEG Dataset
+#   内容：
+     . 在The Kvasir Dataset基础上添加了segmentation masks。包含来自Kvasir Dataset v2的1000张息肉图像和对应的分割ground truth（pixel-wise mask和bounding box），分辨率从332x487到1920x1072不等。
+     ![image](https://user-images.githubusercontent.com/83991596/119068898-a29acc00-ba17-11eb-8538-5c2fd82f03f6.png)
