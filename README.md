@@ -29,6 +29,27 @@
 # 示例图像
 ![mix2](https://user-images.githubusercontent.com/83991596/119069649-19849480-ba19-11eb-9c27-626c3752563a.png)
 
+# 3. The Hyper-Kvasir Dataset
+. 号称最大的胃肠数据集，大小有58.6G，包含110079张图像和374个视频。数据集分为四大类：
+第一类是标注图像，包含10662张图像，相当于The Kvasir Dataset的扩充。类别包含解剖标志(anatomical landmarks)、病理发现(phatological findings)、正常发现(normal findings)，其中解剖标志又分为上消化道（Z线，反转视角下的胃，幽门）、下消化道（回肠，盲肠，反转视角下的直肠），病理发现包括上消化道病理发现（反流性食管炎，巴雷特食管，）、下消化道病理发现（溃疡性结肠炎，息肉，痔疮），正常发现包括波士顿肠道准备评分、粪便、内镜检查程序（"dyed and lifted polyp"，"dyed resection margins"）。
+第二类是分割图像，与The Kvasir-SEG Dataset相同。
+第三类是未标注图像，包含99417张图像。
+第四类是标注视频，包含374个视频，每个视频有对应的finding标签，如息肉、出血、肿瘤等。
+# 示例图像
+![hyper-kvasir-samples0](https://user-images.githubusercontent.com/83991596/119070648-007ce300-ba1b-11eb-9aff-7b1c68ead2ab.jpg)![hyper-kvasir-samples1](https://user-images.githubusercontent.com/83991596/119070660-08d51e00-ba1b-11eb-85e1-f923225443c7.jpg)![hyper-kvasir-samples2](https://user-images.githubusercontent.com/83991596/119070678-0f639580-ba1b-11eb-9b40-2e34bba3c78e.jpg)
+
+
+
+ # 标注图像（3.9GB）  https://datasets.simula.no/hyper-kvasir/hyper-kvasir-labeled-images.zip
+  . 数据集总共包含10,662张使用JPEG格式存储的带标签的图像。可以在图像文件夹中找到图像。每个图像所属的类对应于它们存储在其中的文件夹（例如，“ polyp”文件夹包含所有息肉图像，“ barretts”文件夹包含所有Barrett食道图像，等等）。每个类文件夹位于描述发现类型的子文件夹中，子文件夹又位于描述较低GI或较高GI发现的文件夹中。每个类别的图像数量不平衡，这是医学领域的一个普遍挑战，因为某些发现比其他发现更频繁地出现。这给研究人员带来了额外的挑战，因为应用于数据的方法还应该能够从少量训练数据中学习。标记的图像代表23种不同的发现类别。
+ # 分割图像（46MB） https://datasets.simula.no/hyper-kvasir/hyper-kvasir-segmented-images.zip
+ . 我们为息肉类中的1,000张图像提供了原始图像，分割蒙版和边框。在蒙版中，描绘息肉组织（感兴趣区域）的像素由前景（白色蒙版）表示，而背景（黑色）不包含息肉像素。边界框定义为找到的息肉的最外面的像素。对于此细分集，我们有两个文件夹，一个用于图像，一个用于遮罩，每个文件夹包含1,000个JPEG压缩图像。相应图像的边界框存储在JavaScript对象表示法（JSON）文件中。图像及其相应的蒙版具有相同的文件名。图像和文件存储在分段图像文件夹中。
+ # 未标注图像(29.4GB) https://datasets.simula.no/hyper-kvasir/hyper-kvasir-unlabeled-images.zip
+ . 数据集总共包含99,417张未标记图像。未标记的图像可以与其他标记的图像文件夹一起在未标记的文件夹中找到，该文件夹是图像文件夹中的子文件夹。除了未标记的图像文件外，我们还在Hyper-Kvasir Github存储库中提供了提取的全局特征和群集分配作为属性关系文件格式（ARFF）文件。可以使用例如WEKA机器学习库打开和处理ARFF文件，也可以将它们轻松转换为逗号分隔值（CSV）文件。
+ # 标注视频(25.2GB) https://datasets.simula.no/hyper-kvasir/hyper-kvasir-labeled-videos.zip
+ . 数据集中总共提供了374个视频，这些视频存储在称为“标记视频”的文件夹中。视频文件格式为音频视频交织（AVI）。除视频文件外，还提供了一个CSV文件，其中包含视频的videoID和查找内容。VideoID包含相应的视频文件名，而发现内容包含视频中发现内容的描述。对于某些视频，我们包含了第二个发现，但是我们使用第一个发现对视频进行了分类。总共，我们在视频中有30类发现。与带注释的视频类似，它们位于将发现分类的文件夹中，而反过来又位于描述发现是上GI还是下GI的文件夹中。
+ 
+
 
     
 
