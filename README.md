@@ -1,9 +1,17 @@
 # Endoscopic-Datasets
 
 # 1.The Kvasir Dataset
-#   内容： 
+
+* **内容：** 
    . 分为Kvasir Dataset v1、Kvasir Dataset v2两个版本，两个版本均包含8个类别。其中，解剖标志三类：Z线，幽门，盲肠；病理结果三类：食管炎，息肉，溃疡性结肠炎；内镜检查程序两类："dyed and lifted polyp"，"dyed resection margins"。版本1共包含4000张图像，每类400张。版本2共包含8000张图像，每类800张。分辨率从720x576到1920x1072不等。
-# 对应论文： Pogorelov, K., et al. (2017). Kvasir: A multi-class image dataset for computer aided gastrointestinal disease detection. Proceedings of the 8th ACM on Multimedia Systems Conference.
+* **对应论文：** Pogorelov, K., et al. (2017). Kvasir: A multi-class image dataset for computer aided gastrointestinal disease detection. Proceedings of the 8th ACM on Multimedia Systems Conference.
+
+* **示例图像：**
+<p align="center">
+<img src='imgs/kvasir-samples.png' width=500/> 
+</p>
+
+
 #                                        Kvasir Dataset v1
 . Kvasir数据集（v1）的第一版包含8类的4,000张图像，这些图像显示了GI道的解剖标志，病理学发现或内窥镜检查程序，即每类500张图像。解剖学标志是Z线，幽门和盲肠，病理发现是食管炎，息肉和溃疡性结肠炎。此外，我们提供了两组与息肉切除相关的图像，即“染过的息肉和抬高的息肉”和“切除的切除切缘”。
 #   Kvasir数据集v1    https://datasets.simula.no/kvasir/data/kvasir-dataset.zip
@@ -24,22 +32,32 @@
 . 该kvasir-dataset-v2-folds.zip（尺寸810.9 MB）存档包含20,000多张影像。这是从Kvasir数据集（v2）的扩展生成的官方两类附加图像集，可用于执行多类分类算法的10倍交叉验证。图像存储在单独的文件夹中，该文件夹根据折叠编号和类别图像的名称进行相应命名。所有图像在每个折叠中都统一命名，并且与Kvasir数据集（v2）中的原始图像名称不匹配。图像文件使用JPEG压缩进行编码。编码设置在整个数据集中可能有所不同，并且它们反映了先验未知的内窥镜设备设置。图像文件的扩展名是“ .jpg”。
 # 提取的功能（Kvasir数据集v2折叠-附加集）https://datasets.simula.no/kvasir/data/kvasir-dataset-v2-folds-additional-classes-features.zip
 . 该kvasir-dataset-v2-fold-features.zip（大小24.3 MB）存档包含从Kvasir Dataset v2 Folds-Additional Set中提取的所有图像的视觉特征描述符。提取的视觉特征存储在单独的文件夹和文件中，这些文件夹和文件根据相应图像文件的名称和路径进行相应命名。提取的视觉特征是全局图像特征，即：JCD，Tamura，ColorLayout，EdgeHistogram，AutoColorCorrelogram和PHOG。每个特征向量都包含许多浮点值。向量的大小取决于特征。特征向量的大小为：168（JCD），18（Tamura），33（ColorLayout），80（EdgeHistogram），256（AutoColorCorrelogram）和630（PHOG）。提取的视觉特征存储在文本文件中。每个文件由八行组成，每个功能各占一行。每行由一个特征名称组成，该特征名称与特征向量之间用冒号分隔。每个特征向量都包含由逗号分隔的相应数量的浮点值。提取的视觉特征文件的扩展名是“ .features”。
+
 # 2. The Kvasir-SEG Dataset  https://datasets.simula.no/kvasir-seg/Kvasir-SEG.zip
-#   内容：
+
+* **内容：**
   .  在The Kvasir Dataset基础上添加了segmentation masks。包含来自Kvasir Dataset v2的1000张息肉图像和对应的分割ground truth（pixel-wise mask和bounding box），分辨率从332x487到1920x1072不等。 The images and its corresponding masks are stored in two separate folders with the same filename. The image files are encoded using JPEG compression, and online browsing is facilitated. The open-access dataset can be easily downloaded for research and educational purposes.
-# 对应论文 Jha, D., et al. (2020). Kvasir-seg: A segmented polyp dataset. International Conference on Multimedia Modeling, Springer.
-# 示例图像
-![mix2](https://user-images.githubusercontent.com/83991596/119069649-19849480-ba19-11eb-9c27-626c3752563a.png)
+* **对应论文:** Jha, D., et al. (2020). Kvasir-seg: A segmented polyp dataset. International Conference on Multimedia Modeling, Springer.
+* **示例图像：**
+<p align="center">
+<img src='imgs/kvasir-seg-samples0.png' width=500/> 
+<img src='imgs/kvasir-seg-samples1.png' width=500/> 
+<img src='imgs/kvasir-seg-samples2.png' width=500/> 
+</p>
 
 # 3. The Hyper-Kvasir Dataset
-# 内容
-. 号称最大的胃肠数据集，大小有58.6G，包含110079张图像和374个视频。数据集分为四大类：
-第一类是标注图像，包含10662张图像，相当于The Kvasir Dataset的扩充。类别包含解剖标志(anatomical landmarks)、病理发现(phatological findings)、正常发现(normal findings)，其中解剖标志又分为上消化道（Z线，反转视角下的胃，幽门）、下消化道（回肠，盲肠，反转视角下的直肠），病理发现包括上消化道病理发现（反流性食管炎，巴雷特食管，）、下消化道病理发现（溃疡性结肠炎，息肉，痔疮），正常发现包括波士顿肠道准备评分、粪便、内镜检查程序（"dyed and lifted polyp"，"dyed resection margins"）。
-第二类是分割图像，与The Kvasir-SEG Dataset相同。
-第三类是未标注图像，包含99417张图像。
-第四类是标注视频，包含374个视频，每个视频有对应的finding标签，如息肉、出血、肿瘤等。
-# 对应论文 Hyper-Kvasir: A Comprehensive Multi-Class Image and Video Dataset for Gastrointestinal Endoscopy
-# 示例图像
+* **内容** 号称最大的胃肠数据集，大小有58.6G，包含110079张图像和374个视频。数据集分为四大类：
+    * 第一类是标注图像，包含10662张图像，相当于[The Kvasir Dataset](https://datasets.simula.no/kvasir/)的扩充。类别包含解剖标志(anatomical landmarks)、病理发现(phatological findings)、正常发现(normal findings)，其中解剖标志又分为上消化道（Z线，反转视角下的胃，幽门）、下消化道（回肠，盲肠，反转视角下的直肠），病理发现包括上消化道病理发现（反流性食管炎，巴雷特食管，）、下消化道病理发现（溃疡性结肠炎，息肉，痔疮），正常发现包括波士顿肠道准备评分、粪便、内镜检查程序（"dyed and lifted polyp"，"dyed resection margins"）。
+    * 第二类是分割图像，与[The Kvasir-SEG Dataset](https://datasets.simula.no/kvasir-seg/)相同。
+    * 第三类是未标注图像，包含99417张图像。
+    * 第四类是标注视频，包含374个视频，每个视频有对应的finding标签，如息肉、出血、肿瘤等。
+* **对应论文:** Hyper-Kvasir: A Comprehensive Multi-Class Image and Video Dataset for Gastrointestinal Endoscopy
+* **示例图像：**
+<p align="center">
+<img src='imgs/hyper-kvasir-samples0.jpg' width=200/> 
+<img src='imgs/hyper-kvasir-samples1.jpg' width=200/> 
+<img src='imgs/hyper-kvasir-samples2.jpg' width=200/> 
+</p>
 
 
  # 标注图像（3.9GB）  https://datasets.simula.no/hyper-kvasir/hyper-kvasir-labeled-images.zip
