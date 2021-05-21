@@ -41,9 +41,9 @@
 * **对应论文:** Jha, D., et al. (2020). Kvasir-seg: A segmented polyp dataset. International Conference on Multimedia Modeling, Springer.
 * **示例图像:**
 <p align="center">
-<img src='imgs/kvasir-seg-samples0.png' width=500/> 
-<img src='imgs/kvasir-seg-samples1.png' width=500/> 
-<img src='imgs/kvasir-seg-samples2.png' width=500/> 
+<img src='imgs/kvasir-seg-samples0.png' width=700/> 
+<img src='imgs/kvasir-seg-samples1.png' width=700/> 
+<img src='imgs/kvasir-seg-samples2.png' width=700/> 
 </p>
 
 # 3. The Hyper-Kvasir Dataset
