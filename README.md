@@ -1,4 +1,4 @@
-#EndoSLAM 数据集
+# EndoSLAM 数据集
 * https://www.dropbox.com/s/idfw59tqvzb6ax5/EndoSLAM.zip?dl=0
 * **内容**
 * 我们介绍了一种内窥镜SLAM数据集，该数据集既包含前体数据又包含合成数据。数据集的离体部分包括标准和胶囊内窥镜记录。数据集分为35个子数据集。具体而言，分别存在结肠，小肠和胃的18、5和12个子数据集。
