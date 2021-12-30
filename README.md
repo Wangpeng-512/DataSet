@@ -93,8 +93,20 @@
   * 数据集总共包含99,417张未标记图像。未标记的图像可以与其他标记的图像文件夹一起在未标记的文件夹中找到，该文件夹是图像文件夹中的子文件夹。除了未标记的图像文件外，我们还在Hyper-Kvasir Github存储库中提供了提取的全局特征和群集分配作为属性关系文件格式（ARFF）文件。可以使用例如WEKA机器学习库打开和处理ARFF文件，也可以将它们轻松转换为逗号分隔值（CSV）文件。
 * **标注视频(25.2GB):**  https://datasets.simula.no/hyper-kvasir/hyper-kvasir-labeled-videos.zip
   * 数据集中总共提供了374个视频，这些视频存储在称为“标记视频”的文件夹中。视频文件格式为音频视频交织（AVI）。除视频文件外，还提供了一个CSV文件，其中包含视频的videoID和查找内容。VideoID包含相应的视频文件名，而发现内容包含视频中发现内容的描述。对于某些视频，我们包含了第二个发现，但是我们使用第一个发现对视频进行了分类。总共，我们在视频中有30类发现。与带注释的视频类似，它们位于将发现分类的文件夹中，而反过来又位于描述发现是上GI还是下GI的文件夹中。
- 
+ # LDPolypVideo-Benchmark（带标签的息肉数据集）
+ ### Overview of dataset
+In order to increase the size and diversity of colonoscopy data for training and evaluation of polyp detection approaches, we present a large-scale and diverse colonoscopy video dataset named LDPolyVideo.
+It consists of 160 videos with 40,266 frames, nearly four times the size of the largest existing fully-annotated dataset.
+There are 33,884 frames that contain at least one polyp and in total 200 labeled polyps, which are more than 11 times the polyps in CVC-ClinicVideoDB.
 
+### Download
+[Click here to download the whole dataset in Baidu Cloud](https://pan.baidu.com/s/1ri3lDBDl3v00TAXc6euzvw )
+
+Extraction code: ustc
+
+[Click here to download the whole dataset in  Google drive](https://drive.google.com/drive/folders/13KwU_uZcxsl6dL-mqcs39Yb0gjU9vn3G?usp=sharing) (Part-1)
+
+[Click here to download the whole dataset in  Google drive](https://drive.google.com/file/d/1pxFYO-nRd5uqdYsjs7NRkwXQMMurbWsZ/view?usp=sharing) (Part-2)
 
     
 
